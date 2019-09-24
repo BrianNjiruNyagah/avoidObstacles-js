@@ -1,0 +1,9 @@
+function avoidObstacles(inputArray) {
+    inputArray = inputArray.sort((a,b) => a-b);
+    
+    var i =1;
+    while(!inputArray.every((element)=> element%i != 0)){
+        i++;
+    }
+    return i;  
+} 
